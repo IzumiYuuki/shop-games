@@ -1,0 +1,157 @@
+<html>
+<head>
+<script language="javascript">
+function order()
+{
+z=document.form.product.value;
+if(z==0)
+alert("please enter your product!!!!")
+else 
+alert("Thank you for shopping with us for the product "+z);
+}
+</script>
+</head>
+<body background="cool-wallpaper-preview-20.jpg">
+<center><font face="arial" size="8" color="orange"><b><u>
+ORDER REGISTRATION</u></b></font></center><br><br>
+<form method="post" name="form">
+<table>
+<tr>
+  <td><font type=Modern No. 20 size="4" color="aqua">First Name</font></td>
+  <td><input type="text box" size="16" maxlength="16" name="fn"></td>
+ 
+ </tr>
+<tr>
+  <td><font type=Modern No. 20 size="4" color="aqua">Last Name</font></td>
+  <td><input type="text box" size="16" maxlength="16" name="ln"></td>
+ </font>
+</tr>
+<tr>
+  <td><font type=Modern No. 20 size="4" color="aqua">Phone number</font></td>
+  <td><input type="text box" size="3" maxlength="4">&nbsp&nbsp&nbsp&nbsp
+      <input type="text box" size="12" maxlength="10"></td>
+</tr>
+<tr>
+<td><font type=Modern No. 20 size="4" color="aqua">Gender</font></td>
+<td><select name="gen">
+<option name="A">Alien
+<option name="">Male
+<option name="">Female
+</select>
+</td>
+</tr>
+<tr>
+<td><font type=Modern No. 20 size="4" color="aqua">Please chose your product.</font></td> 
+<td><select name="product">
+<option name="">
+<option name="s1">Mafia III
+<option name="s2">Need For speed Rivals
+<option name="s3">Left 4 Dead 2
+<option name="s4">Battlefield 4
+<option name="s5">Grand theft auto V
+<option name="s6">Destiny 2
+<option name="s7">Diablo III Reaper of soul
+<option name="s8">Call of duty Infinite Warfare
+<option name="s9">Assassin's Creed Unity
+<option name="s11">Assassin's Creed III
+<option name="s12">Assassin's Creed IV Black Flag
+<option name="s13">Assassin's Creed Origins
+</select></td>
+</tr>
+<tr>
+<td><font type=Modern No. 20 size="4" color="aqua">Address</font></td>
+<td><input type="text box" size="80" maxlength="70" ></td>
+</tr>
+<tr>
+<td><font type=Modern No. 20 size="4" color="aqua">City</font></td>
+<td><select name="city">
+<option name="K">Kolkata
+<option name="D">Delhi
+<option name="M">Mumbai
+<option name="b">Bengaluru
+<option name="C">Chennai
+<option name="L">Lucknow
+</select>
+</td>
+</tr>
+<tr>
+<td><font type=Modern No. 20 size="4" color="aqua">State</font></td>
+<td><select name="state">
+<option name="w">West Bengal
+<option name="UP">Uttar Pradesh
+<option name="T">Tamil Nadu
+<option name="Kr">Karnatka
+<option name="D">New Delhi
+<option name="M">Maharashtra
+</select></td>
+</tr>
+<tr>
+<td><font type=Modern No. 20 size="4" color="aqua">ZIP</font></td>
+<td><input type="text box" size="6" maxlength="6" ></td>
+</tr>
+<hr>
+<tr>
+<td><font type=Modern No. 20 size="4" color="aqua">How would you like to pay for this?</font></td>
+<td><select name="payment">
+<option name="m">Master Card
+<option name="v">Visa
+<option name="p">PayTM
+<option name="r">Rupay
+<option name="cod">Cash On Delivery
+</select>
+</td>
+</tr>
+<tr>
+<td><font type=Modern No. 20 size="4" color="aqua">Expiration Date</font></td>
+<td><select name="month">
+<option name="">
+<option name="na">N/A
+<option name="ja">01
+<option name="fe">02
+<option name="mar">03
+<option name="apr">04
+<option name="may">05
+<option name="ju">06
+<option name="jl">07
+<option name="aug">08
+<option name="sep">09
+<option name="oct">10
+<option name="nov">11
+<option name="dec">12
+</select>
+<select name="year">
+<option name="">
+<option name="na">N/A
+<option name="ja">2016
+<option name="fe">2017
+<option name="mar">2018
+<option name="apr">2019
+<option name="may">2020
+<option name="ju">2021
+<option name="jl">2022
+</select>
+</td>
+</tr>
+<tr>
+<td><textarea rows="10" cols="40" name="shipping address" >
+Enter Shipping Address if above is different from Mailing Address
+</textarea>
+</td>
+</tr>
+<tr>
+<td><input type="checkbox" value="r1" name="r1">
+<font type=Modern No. 20 size="4" color="aqua">Check if Shipping Address is different from Mailing Address</font</td>
+</tr>
+</table>
+<hr>
+<font face="courier" size="3" color="red">
+*Please take care that everything is filled out correctly then click "Submit Order"
+<br><br><br><br>
+<center>
+<input type="submit" name="sbmt"  value="SUBMIT ORDER" OnClick="order()">
+&nbsp&nbsp
+<input type="Reset"  name="rst" value="Reset" >
+<HR></center>
+</form>
+</body>
+</html>
